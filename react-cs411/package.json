@@ -1,7 +1,7 @@
 {
   "name": "react-cs411",
   "version": "0.1.0",
-  "homepage": "https://shuyangConnor.github.io/BUCS411A5",
+  "homepage": "https://shuyangConnor.github.io/BUCS411A5/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",

@@ -1,11 +1,11 @@
-import React from "react"
-import "./css/base.css"
-import "./css/App.css"
-import { Routes, Route } from "react-router-dom"
-import Login from "./Components/Login"
-import Home from "./Components/Home"
-import NavBar from "./Components/NavBar"
-import FavRecipes from "./Components/FavRecipes"
+import React from 'react'
+import './css/base.css'
+import './css/App.css'
+import { Routes, Route } from 'react-router-dom'
+import Login from './Components/Login'
+import Home from './Components/Home'
+import NavBar from './Components/NavBar'
+import FavRecipes from './Components/FavRecipes'
 
 class App extends React.Component {
   state = {
@@ -15,25 +15,25 @@ class App extends React.Component {
 
   getSearchItem = (item) => {
     this.setState({
-      parsed_search_item: item
+      parsed_search_item: item,
     })
   }
 
   getDietOption = (item) => {
     this.setState({
-      diet_option: item
+      diet_option: item,
     })
   }
 
-  render () {
+  render() {
     return (
       <div>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/login" element={<Login />}></Route>
-        <Route path="/saved-recipes" element={<FavRecipes/>}></Route>
-      </Routes>
+        <NavBar />
+        <Routes>
+          <Route path="/home" element={<Home />}></Route>
+          <Route path="/login" element={<Login />}></Route>
+          <Route path="/saved-recipes" element={<FavRecipes />}></Route>
+        </Routes>
       </div>
     )
   }
